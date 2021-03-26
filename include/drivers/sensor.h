@@ -193,12 +193,12 @@ enum sensor_channel {
 	 * This and higher values are sensor specific.
 	 * Refer to the sensor header file.
 	 */
-	SENSOR_CHAN_PRIV_START = SENSOR_CHAN_COMMON_COUNT,
+	SENSOR_CHAN_PRIV_START  = SENSOR_CHAN_COMMON_COUNT,
 
 	/**
 	 * Maximum value describing a sensor channel type.
 	 */
-	SENSOR_CHAN_MAX = INT16_MAX,
+	SENSOR_CHAN_MAX         = INT16_MAX,
 };
 
 /**
@@ -249,12 +249,12 @@ enum sensor_trigger_type {
 	 * This and higher values are sensor specific.
 	 * Refer to the sensor header file.
 	 */
-	SENSOR_TRIG_PRIV_START = SENSOR_TRIG_COMMON_COUNT,
+	SENSOR_TRIG_PRIV_START  = SENSOR_TRIG_COMMON_COUNT,
 
 	/**
 	 * Maximum value describing a sensor trigger type.
 	 */
-	SENSOR_TRIG_MAX = INT16_MAX,
+	SENSOR_TRIG_MAX         = INT16_MAX,
 };
 
 /**
@@ -321,12 +321,12 @@ enum sensor_attribute {
 	 * This and higher values are sensor specific.
 	 * Refer to the sensor header file.
 	 */
-	SENSOR_ATTR_PRIV_START = SENSOR_ATTR_COMMON_COUNT,
+	SENSOR_ATTR_PRIV_START  = SENSOR_ATTR_COMMON_COUNT,
 
 	/**
 	 * Maximum value describing a sensor attribute type.
 	 */
-	SENSOR_ATTR_MAX = INT16_MAX,
+	SENSOR_ATTR_MAX         = INT16_MAX,
 };
 
 /**
@@ -586,12 +586,12 @@ static inline int z_impl_sensor_channel_get(const struct device *dev,
 /**
  * @brief The value of gravitational constant in micro m/s^2.
  */
-#define SENSOR_G		9806650LL
+#define SENSOR_G                                9806650LL
 
 /**
  * @brief The value of constant PI in micros.
  */
-#define SENSOR_PI		3141592LL
+#define SENSOR_PI                               3141592LL
 
 /**
  * @brief Helper function to convert acceleration from m/s^2 to Gs
